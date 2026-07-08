@@ -8,18 +8,95 @@
   <body>
     <h1>Formulários em HTML</h1>
 
-    <form method="post">
-      <label for="nome">Nome</label><br />
-      <input
-        type="text"
-        name="nome"
-        id="nome"
-        placeholder="Digite o seu nome"
-        required
-      /><br>
+    <form method="post" action="servidor.php"> <!--depois que fizer o botão submit envia pra esse servidor-->
+      <fieldset>
+        <legend>Login</legend>
+        <label for="nome">Nome</label><br />
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite o seu nome"  
+          required 
+          minlength="5"
+          maxlength="15"
+        /><br /> <!--Required se torna obrigatório. Minlengt tamanho mínimo. Maxlength máximo de caractéres-->
 
-      <label for="senha">Senha</label><br />
-      <input type="password" name="senha" id="senha" />
+        <label for="senha">Senha</label><br />
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Digite a sua senha"
+          required
+        />
+      </fieldset>
+
+      <br />
+      <label for="tel">Telefone</label><br />
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="Informe o seu telefone"
+      />
+       <br />
+      <label for="idade">Idade</label><br />
+      <input
+        type="number"
+        name="idade"
+        id="idade"
+        placeholder="Informe a sua idade"
+        min="12"
+        max="21"
+        required
+      />
+
+      <br /><br />
+      <select name="category" id="input-category"> <!--são os de selecionar as opções-->
+        <option value="">Selecione...</option>
+
+        <option value="eletronicos">Eletrônicos</option>
+        <option value="moda">Moda</option>
+        <option value="ti">Tecnologia</option>
+      </select>
+
+      <br /><br />
+      <fieldset>
+        <legend>Radio</legend>
+        <!--A frase fica na linha da caixinha-->
+        <input type="radio" name="client-type" id="radio-pf" value="pf" />
+        <label for="radio-pf">Pessoa Física</label> <!--o radio são bolinhas-->
+        <br />
+        <input type="radio" name="client-type" id="radio-pj" value="pj" />
+        <label for="radio-pj">Pessoa Jurídica</label>
+      </fieldset> <!--faz caixinha-->
+
+      <br /><br />  <!--Checkbox faz opção de caixinha e pode marcar e desmarcar-->
+      <fieldset>
+        <legend>Checkbox</legend> <!--coloca essa frase na linha da caixinha-->
+      <input type="checkbox" name="preferences" id="check-offers" value="offers"/> <!--se são do mesmo grupo os names tem que ser iguais-->
+      <label for="check-offers">Receber ofertas</label>
+       <br><br>
+      <input type="checkbox" name="preferences" id="check-news" value="news" />
+      <label for="check-news">Newsletter</label>
+      </fieldset> <!--termina a caixa-->
+
+
+      <h2>Botão comum</h2>
+      <p>Botão apenas para uma ação interna. Não encerra o formulário.</p>
+      <input type="button" value="Mostrar mensagem"
+      onclick="alert('Olá!')"> 
+
+      <h2>Botão submit</h2>
+      <p>É o botão padrão de "enviar" que o formulário possui ao final</p>
+      <p>Ao clicar, o navegador:</p>
+      <p>-Verifica se o formulário é valido;</p>
+      <p>-Se houver erro, exibe mensagem de validação;</p>
+      <p>-Se estiver tudo correto, envia os dados.</p>
+
+      <input type="submit" value="Enviar">
+     
     </form>
   </body>
 </html>
