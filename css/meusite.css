@@ -1,0 +1,21 @@
+body {
+    background-color: #FFC0CB;
+}
+
+h1 {
+    
+    margin: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+     margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+    /*o p é para parágrafo centralizar ele*/
+    p {
+        text-align: center;
+    }

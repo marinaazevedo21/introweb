@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-color: #FFFFF0;*/
+    background-color: rgb(245,245, 245);
+    color: #8B4513;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: red;
+    background-color: yellow;
+    margin: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+    h2, h3 {
+        font-weight: 300;
+    }
+
+     /*link   TODA VEZ QUE EU QUISER CONFIGURAR TEM QUE COLOCAR AS CHAVES*/
+    a {
+        color: #7FFFD4;
+        text-decoration: none;
+        transition: 1s;  /*para nao ir apertando direto, vai em 1 segundo*/
+    }
+
+    /*QUANDO PASSA O MOUSE POR CIMA, SOBRE O LINK*/
+    a:hover {
+        text-decoration: underline;
+        background-color: white;
+    }
+
+/* id intro */
+#intro{
+    background-color: darkgrey;
+    padding: 10px;
+    /*margin: 20px; 
+    padding-left: 30px;
+    padding-top: 20px; 
+    padding: 10px 20px 30px 40px;
+    padding: 10px 50px;  */
+
+    width: 200px;
+    height: 700px;
+
+
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+p{
+    margin: 20px;
+}
