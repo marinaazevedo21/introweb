@@ -1,0 +1,16 @@
+/* Reset tira todos os efeitos anteriores*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+nav ul li{
+    /*display: block; tirou as bolinhas*/
+    /*display: inline; deixou a lista em uma linha só*/
+    display: inline-block;
+    /*display: none; limpou tudo*/
+
+    margin-right: 16px;
+}
