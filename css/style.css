@@ -33,7 +33,7 @@ margin: 20px;
 }
 
 /* Cards de produto */
-.product-card {
+.product-card { /*chamandi uma classe com . */
 background-color: white;
 border: 1px solid #ddd;
 padding: 15px;
@@ -46,11 +46,11 @@ h2 {
 margin-bottom: 10px;
 }
 
-/* Rodapé */
-.footer {
+/* Rodapé -> está chamando só a tag*/
+footer {  
 background-color: #222;
 color: white;
 text-align: center;
 padding: 15px;
 margin-top: 20px;
-}
+} /*# é para chamar id*/

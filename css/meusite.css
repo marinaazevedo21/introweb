@@ -15,7 +15,7 @@ color: #0b0a0a;
 .header {
 background-color: #bb6d7a;
 color: white;
-padding: 10px;
+padding: 5px;
 text-align: center;
 }
 
@@ -23,10 +23,19 @@ body {
     background-color: #FFC0CB;
 }
 
+/*POSITION FIXED*/
+/*bolsa - em vez de img4 poderia colocar o nome da #foto*/
+/*#img4 {
+    position: fixed; /*ela ficou fixa e quando roda a tela ela se movimenta, serve pra deixar o menu travado, no header*/
+    /*top: 50px;
+    left: 50px;
+}*/
+
+
 h1 {
     
-    margin: 120px;
-    padding: 20px;
+    margin: 50px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -40,3 +49,12 @@ h2 {
     p {
         text-align: center;
     }
+
+    /* Rodapé -> está chamando só a tag*/
+footer {  
+background-color: #bb6d7a;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 20px;
+}
