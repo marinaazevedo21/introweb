@@ -1,0 +1,61 @@
+/* grid.css - Código Inicial */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Exemplo de Flexbox usado apenas para centralizar o conteúdo do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /*cor de fundo*/
+    color: white; /*cor da letra*/
+    padding: 20px; /*espaço de dentro pra fora*/
+    margin-bottom: 20px; /*da caixa externa pra fora, só que para baixo*/
+    border-radius: 8px; /*arredonda as bordas*/
+}
+
+.produto {
+    background-color: #fff; /*o código da cor está resumido*/
+    border: 2px solid #ccc; /*borda da caixa - solid linha contínua*/
+    padding: 40px 20px; /*40 é cima e baixo, o 20 é os dois lados*/
+    text-align: center; /*alinhamento do texto ao centro*/
+    font-size: 1.2rem; /*tamanho da fonte*/
+    font-weight: bold; /*fonte em negrito*/
+    border-radius: 8px;
+}
+
+/* ========================================== */
+/* ESCREVA SEU CÓDIGO GRID E RESPONSIVO ABAIXO */
+/* ========================================== */
+
+/*ajustar o site para celular*/
+
+.container-produtos {
+    display: grid; /*grid é grade*/
+    grid-template-columns: 1fr; /*a grade só vai ter uma coluna*/
+    gap: 15px; /*vão entre duas coisas,espaçamento de 15*/
+}
+
+/*Resolução sugerida para tablet*/
+@media (min-width: 768px) {
+    .container-produtos{
+        grid-template-columns: 1fr 1fr; /*dividindo em duas grades*/
+    }
+}
+
+/*Resolução para desktop - computador de mesa ou notebook*/
+@media (min-width: 1024px) {
+    .container-produtos{
+        grid-template-columns: repeat(3,1fr); /*repetindo três vezes o fr*/
+    }
+}
+

@@ -147,25 +147,26 @@ h2 {
     background-color: #000000; /* Fundo preto (combina com a borda da sua foto) */
     color: #ffffff;            /* Texto branco */
     padding: 8px 16px;
-    border-radius: 20px;       /* Deixa arredondado estilo pílula */
+    border-radius: 20px;       /* Deixa a foto redonda */
     font-size: 14px;
     font-weight: bold;
 }
- /* Rodapé -> está chamando só a tag*/
-footer {  
-background-color: #1E293B;
-color: white;
-text-align: center;
-padding: 15px 0;
-margin-top: auto;
-width: 100%;
-}
+ 
 
 #contato {
     padding-top: 60px;
 }
 #contato .section-title {
     margin-bottom: 5px;
+}
+
+
+/* Texto de introdução */
+.contato-texto {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 10px;
 }
 
 /* Container principal do contato */
@@ -175,15 +176,8 @@ width: 100%;
     text-align: center;
     padding: 20px;
 }
-/* Texto de introdução */
-.contato-texto {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 10px;
-}
 
-/* Container dos botões (coloca-os lado a lado ou um embaixo do outro no celular) */
+/* Container dos botões (coloca lado a lado) */
 .contato-links {
     display: flex;
     flex-direction: row;
@@ -207,4 +201,15 @@ width: 100%;
 /* Efeito ao passar o mouse por cima do botão */
 .botao-contato:hover {
     background-color: #333333; /* O preto fica um pouquinho mais claro */
+}
+
+
+/* Rodapé -> está chamando só a tag*/
+footer {  
+background-color: #1E293B;
+color: white;
+text-align: center;
+padding: 15px 0;
+margin-top: auto;
+width: 100%;
 }
